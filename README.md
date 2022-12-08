@@ -4,21 +4,21 @@
 
 ## Таблица и данные в SQL    
 CREATE - создание базы данных   
-`> CREATE DATABASE databasename`  
+`CREATE DATABASE databasename`  
 BACKUP DATABASE - полная резервная копия  
-`> BACKUP DATABASE databasename  
-> TO DISK = 'filepath' ` 
+`BACKUP DATABASE databasename  
+TO DISK = 'filepath' ` 
 
 ###  Работа с таблицами     
 CREATE TABLE - создание таблицы  
-`> CREATE TABLE table_name (  
+`CREATE TABLE table_name (  
     column1 datatype,  
     column2 datatype,  
    ....  
 )`  
 ALTER - добавление, удаление или изменение столбцов в существующей таблице  
-`> ALTER TABLE table_name  
-> ADD column_name datatype`  
+`ALTER TABLE table_name  
+ADD column_name datatype`  
 AUTO INCREMENT - автоматически генерирует уникальное число при вставке новой записи в таблицу  
 `> ALTER TABLE Persons AUTO_INCREMENT=100`  
 DROP TABLE - удаление таблицы
