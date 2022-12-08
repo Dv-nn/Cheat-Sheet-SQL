@@ -10,17 +10,20 @@ BACKUP DATABASE - полная резервная копия
 ###  Работа с таблицами     
 CREATE TABLE - создание таблицы  
 > CREATE TABLE table_name (  
-    > column1 datatype,  
-    > column2 datatype,  
-   > ....  
-> )  
+> column1 datatype,  
+> column2 datatype,  
+> ....  
+> ) 
+ 
 ALTER - добавление, удаление или изменение столбцов в существующей таблице  
 > ALTER TABLE table_name  
 > ADD column_name datatype  
 > AUTO INCREMENT - автоматически генерирует уникальное число при вставке новой записи в таблицу  
 > ALTER TABLE Persons AUTO_INCREMENT=100  
-DROP TABLE - удаление таблицы
-CREATE INDEX - для более быстрого извлечения данных из базы данных, чем в других случаях  
+
+DROP TABLE - удаление таблицы  
+
+CREATE INDEX - для более быстрого извлечения данных из базы данных, чем в других случаях   
 > CREATE INDEX index_name  
 > ON table_name (column1, column2, ...)  
 
@@ -48,7 +51,7 @@ ___
 
 ## *Запросы к данным*  
 ### Запрос данных 
-- SELECT - используется для выбора данных из базы данных   
+SELECT - используется для выбора данных из базы данных   
 > SELECT column1, column2, ...  
 > FROM table_name 
   
