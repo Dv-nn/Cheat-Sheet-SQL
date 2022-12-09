@@ -3,6 +3,7 @@
 ## *Таблица и данные в SQL*     
 CREATE - создание базы данных   
 > CREATE DATABASE databasename  
+
 BACKUP DATABASE - полная резервная копия  
 > BACKUP DATABASE databasename   
 > TO DISK = 'filepath'   
@@ -17,8 +18,9 @@ CREATE TABLE - создание таблицы
  
 ALTER - добавление, удаление или изменение столбцов в существующей таблице  
 > ALTER TABLE table_name  
-> ADD column_name datatype  
-> AUTO INCREMENT - автоматически генерирует уникальное число при вставке новой записи в таблицу  
+> ADD column_name datatype 
+
+AUTO INCREMENT - автоматически генерирует уникальное число при вставке новой записи в таблицу  
 > ALTER TABLE Persons AUTO_INCREMENT=100  
 
 DROP TABLE - удаление таблицы  
@@ -39,11 +41,13 @@ CREATE INDEX - для более быстрого извлечения данн�
 ###  Вставка и изменение данных  
 INSERT INTO - вставка новых записей в таблицу   
 > INSERT INTO table_name  
-> VALUES (value1, value2, value3, ...)    
+> VALUES (value1, value2, value3, ...)  
+
 UPDATE - изменение существующих данных    
 > UPDATE table_name  
 > SET column1 = value1, column2 = value2, ...  
 > WHERE condition  
+
 DELETE  - удаление данных  
 >DELETE FROM table_name WHERE condition  
 ___  
@@ -83,11 +87,11 @@ SELECT - используется для выбора данных из базы
  
 CASE - проходит через условия и возвращает значение, когда выполняется первое условие  
 > SELECT column1  
-> CASE  
-> WHEN condition1 THEN result1  
-> WHEN condition2 THEN result2  
-> WHEN conditionN THEN resultN  
-> ELSE result  
+>  CASE  
+>   WHEN condition1 THEN result1  
+>   WHEN condition2 THEN result2  
+>   WHEN conditionN THEN resultN  
+>  ELSE result  
 > END  
 > FROM table1    
  
