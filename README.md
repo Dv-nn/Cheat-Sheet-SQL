@@ -347,15 +347,17 @@ ___
 > CREATE INDEX indexName ON tableName;  
 ___  
 ## *Защита данных*  
-Защита учетной записи:  
+Защита учетной записи:    
 > SET PASSWORD FOR 'root' @ 'localhost' = PASSWORD('b4dZ');
-Создание нового пользователя:
-> CREATE USER name_user IDENTIFIED BY 'cl3sdy5';
 
-Команда GRANT точно определяет, какие операции с таблицамии столбцами могут выполняться пользователями   
-> GRANT SELECT ON table_name TO name_user;    
-Команда REVOKE лишает предоставленной привилегии  
-> REVOKE SELECT ON table_name FROM name_user;  
+Создание нового пользователя:  
+> CREATE USER name_user IDENTIFIED BY 'cl3sdy5';  
+
+Команда GRANT точно определяет, какие операции с таблицамии столбцами могут выполняться пользователями     
+> GRANT SELECT ON table_name TO name_user;
+   
+Команда REVOKE лишает предоставленной привилегии    
+> REVOKE SELECT ON table_name FROM name_user;    
 
 ____  
 Примечание:  
